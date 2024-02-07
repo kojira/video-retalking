@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  videoretalking:
+    container_name: videoretalking
+    build:
+      context: "./"
+      dockerfile: "./Dockerfile"
+    volumes:
+      - "./:/work/"
+    tty: true
+    working_dir: /work/
