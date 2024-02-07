@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM pytorch/pytorch:2.2.0-cuda12.1-cudnn8-runtime
 
 RUN mkdir /work
 WORKDIR /work
